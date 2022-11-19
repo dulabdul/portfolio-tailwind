@@ -2,10 +2,20 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+    container: {
+      center: true,
+      padding: '16px',
+    },
     extend: {
       colors: {
-        main: '#03ad7a',
-        mainHover: '#02996c',
+        primary: '#0284c7',
+        secondary: '#475569',
+      },
+      fontFamily: {
+        montserrat: 'Montserrat',
+      },
+      screens: {
+        '2xl': '1320px',
       },
     },
   },

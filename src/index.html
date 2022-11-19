@@ -9,36 +9,73 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <link
       rel="stylesheet"
       href="../dist/css/styles.css" />
     <title>Tailwind Portfolio</title>
   </head>
-  <body>
+  <body class="font-montserrat">
     <!--Hero Section Start-->
     <section
       id="home"
       class="pt-20">
-      <div class="container max-w-md flex justify-center p-8">
-        <div class="hero__section">
-          <div class="hero__section-heading">
-            <h1 class="text-2xl text-main font-semibold mb-2">Hi, Everyone</h1>
-            <h2 class="text-slate-700 text-3xl mb-1">
-              I'am Abdul <span class="text-main font-semibold">Rahman</span>
+      <div class="container">
+        <div class="flex flex-wrap md:flex-nowrap">
+          <div class="w-full self-center px-8 lg:w-1/2">
+            <h1 class="text-xl text-primary font-bold mb-1 lg:text-2xl">
+              Hi, I'am <span class="text-secondary">Abdul</span>
+              <span class="text-secondary font-semibold">Rahman</span>
+            </h1>
+            <h2 class="text-2xl text-slate-800 lg:text-4xl">
+              Front End
+              <span class="text-primary font-semibold">Web Developer</span>
             </h2>
-            <h2 class="text-2xl text-slate-800">
-              <span class="text-slate-700">Front End</span> Web Developer
-            </h2>
-            <button
-              href="#"
-              class="bg-main inline-block rounded-full px-4 py-2 mt-3 text-white shadow-sm hover:bg-mainHover">
-              <i class="fa-solid fa-phone"></i> Get Touch
-            </button>
+            <p
+              class="text-base text-slate-500 leading-relaxed lg:leading-loose">
+              Turning your idea with good programmer.
+            </p>
+            <div class="lg:mt-8">
+              <a
+                href="#"
+                class="bg-primary text-white rounded-full px-6 py-2 mt-4 inline-block shadow-sm hover:bg-sky-800 lg:mr-2"
+                ><i class="fa-solid fa-phone"></i> Get Touch</a
+              >
+              <a
+                href="#"
+                class="bg-primary text-white rounded-full px-6 py-2 mt-4 inline-block shadow-sm hover:bg-sky-800"
+                ><i class="fa-solid fa-download"></i> Get CV</a
+              >
+            </div>
           </div>
-          <div class="hero__section-img">
-            <img
-              src="./assets/img/abdul.jpeg"
-              alt="Profile Image"
-              class="rounded-full w-60 mt-8" />
+          <div class="w-full self-end px-8 py-8 lg:w-1/2">
+            <div class="relative">
+              <img
+                src="./assets/img/abdul2.png"
+                alt="Profile Image"
+                class="rounded-lg mx-auto w-60 lg:w-80" />
+              <span
+                class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2 lg:scale-150 lg:bottom-28">
+                <svg
+                  viewBox="0 0 200 200"
+                  width="300"
+                  height="300"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill="#0284C7"
+                    d="M37.4,-55.5C44.4,-46.5,43,-30,46.2,-16C49.4,-2,57.2,9.6,59.8,25C62.5,40.5,60,59.8,49.2,71.8C38.4,83.8,19.2,88.5,5,81.5C-9.1,74.6,-18.2,56.1,-31.1,44.8C-43.9,33.4,-60.4,29.2,-66.5,19.5C-72.5,9.8,-68.1,-5.5,-61,-17.5C-53.9,-29.6,-44.1,-38.4,-33.5,-46.2C-22.9,-54,-11.5,-60.6,1.9,-63.3C15.3,-65.9,30.5,-64.4,37.4,-55.5Z"
+                    transform="translate(100 100) scale(1.25)" />
+                </svg>
+              </span>
+            </div>
           </div>
         </div>
       </div>
