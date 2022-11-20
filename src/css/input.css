@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white rounded-full px-3 py-2 mt-4 inline-block shadow-sm hover:bg-sky-800 transition-all ease-in-out;
+  }
+  .btn-social-media {
+    @apply flex items-center justify-center bg-transparent border border-slate-400 rounded-full w-10 h-10 hover:bg-primary hover:border-primary transition-all ease-in-out;
+  }
+  .btn-social-media__icons {
+    @apply text-slate-400 text-[28px] text-center group-hover:text-white;
+  }
+  .card-project {
+    @apply shadow-md rounded-xl hover:scale-105 transition-all;
+  }
+  .partners-icons {
+    @apply w-11/12 grayscale hover:grayscale-0 transition-all ease-in-out duration-300 lg:w-full;
+  }
+  .card-blog {
+    @apply rounded-lg shadow-md overflow-hidden;
+  }
+}
+
 @tailwind utilities;
